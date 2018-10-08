@@ -1,0 +1,22 @@
+
+<html ng-app="addressBookApp">
+<head>
+  <meta charset="utf8" />
+  <title>Addresses</title>
+</head>
+<body>
+  <script src="angular.js"></script>
+  <script src="addressBook.js"></script>
+  
+<h1>address book</h1>
+
+<table class="table" ng-controller="addressesCtrl">
+  <tr ng-repeat="address in addresses">
+    <td>{{address.firstname}} {{address.lastname}}</td>
+    <td>{{address.email}}</td>
+  </tr>
+</table>
+
+  
+</body>
+</html>
