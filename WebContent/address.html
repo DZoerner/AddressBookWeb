@@ -1,0 +1,23 @@
+<html ng-app="addressBookApp">
+<head>
+  <meta charset="utf8" />
+  <title>Address</title>
+  <base href="/AddressBookWeb/">
+</head>
+<body>
+  <script src="angular.js"></script>
+  <script src="angular-route.js"></script>  
+  <script src="address.js"></script>
+  
+<h1>address</h1>
+
+<table class="table" ng-controller="addressCtrl">
+  <tr>
+    <td>{{address.firstname}} {{address.lastname}}</td>
+    <td>{{address.email}}</td>
+  </tr>
+</table>
+
+  
+</body>
+</html>
