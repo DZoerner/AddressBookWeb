@@ -10,7 +10,7 @@ app.config(function($routeProvider) {
 	});
 
 app.controller('addressesCtrl', function($scope, $http) {
-    $http.get('http://localhost:8080/all').
+    $http.get('http://localhost:8080/').
         then(function(response) {
              $scope.addresses = response.data.addresses;
         });
