@@ -9,12 +9,11 @@
   <script src="angular-route.js"></script>  
   <script src="address.js"></script>
   
-<h1>address</h1>
 
 <table class="table" ng-controller="addressCtrl">
+	<tr><td colspan="2"><h1>Address of {{address.firstname}} {{address.lastname}}</h1></td></tr>
   <tr>
-    <td>{{address.firstname}} {{address.lastname}}</td>
-    <td>{{address.email}}</td>
+    <td>EMail:</td><td>{{address.email}}</td>
   </tr>
 </table>
 
