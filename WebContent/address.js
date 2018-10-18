@@ -13,7 +13,7 @@ app.config(['$routeProvider', function($routeProvider) {
 
 
 app.controller('addressCtrl', ['$location', '$http', '$scope', function($location, $http, $scope) {
-    $http.get('http://localhost:8080/' + $location.search().id).
+    $http.get('http://localhost:8080/addresses/' + $location.search().id).
         then(function(response) {
              $scope.address = response.data;
         });
